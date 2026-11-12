@@ -28,6 +28,9 @@ and parameter reload.
 - **Reproducible evidence:** every run used by the reported comparisons is
   preserved with its configuration, measurements, and logs.
 
+See [Contribution map](CONTRIBUTIONS.md) for the boundary between upstream
+`verl`, the modified implementation, experiment tooling, and curated evidence.
+
 ## Main results
 
 Unless noted otherwise, the reference comparison uses Qwen2.5-0.5B-Instruct,
@@ -174,7 +177,7 @@ historical bucket sweep's Update time directly with the overlap-enabled
 
 ```text
 src/verl/                     Modified verl submodule and offload engine
-benchmarks/offload/           Top-level benchmark entry points/config stubs
+benchmarks/offload/configs/   Reproduction matrix configurations
 data/gsm8k/                   Small benchmark dataset
 docs/EXPERIMENTS.md           Experimental design and reproduction guide
 reports/                      Technical reports
@@ -186,6 +189,7 @@ results/data/                 Raw evidence grouped by comparison
 
 Start with these artifacts:
 
+- [Contribution map](CONTRIBUTIONS.md)
 - [Experiment guide](docs/EXPERIMENTS.md)
 - [Engineering insights and debugging notes (Korean)](docs/ENGINEERING_INSIGHTS_KO.md)
 - [Korean study report](reports/STUDY_REPORT_KO.md)

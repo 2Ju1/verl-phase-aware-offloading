@@ -1,4 +1,4 @@
 [submodule "src/verl"]
 	path = src/verl
-	url = git@github.com:2Ju1/verl.git
+	url = https://github.com/2Ju1/verl.git
 	branch = single-gpu-phase-offloading
